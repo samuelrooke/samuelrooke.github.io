@@ -2,7 +2,7 @@
 body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #121212, #1f1f1f);
+  background: linear-gradient(135deg, #121212, #3b3a3a);
   color: #e0e0e0;
   min-height: 100vh;
   line-height: 1.6;
@@ -10,32 +10,34 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: rgba(40, 40, 40, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 2px solid #4a90e2; /* bright blue accent */
-  transition: background-color 0.3s ease;
+  border-bottom: 2px solid #4a90e2;
 }
 
-.navbar.scrolled {
-  background-color: rgba(40, 40, 40, 1);
+.navbar .nav-link {
+  color: #ddd !important;
+}
+
+.navbar .nav-link:hover {
+  color: #4a90e2 !important;
 }
 
 /* Hero Section */
-header {
-  text-align: center;
-  padding: 5rem 1rem;
+.hero-section {
+  padding: 6rem 1rem 4rem;
   background: rgba(25, 25, 25, 0.85);
+  text-align: center;
 }
 
-header h1 {
+.hero-section h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #4a90e2; /* bright blue accent */
+  color: #4a90e2;
 }
 
-header p.lead {
+.hero-section .lead {
   font-size: 1.5rem;
-  font-weight: 400;
   color: #bbb;
 }
 
@@ -52,28 +54,25 @@ section h2 {
   text-align: center;
 }
 
-/* Projects */
-.bg-light {
+/* Custom dark background for projects */
+.bg-dark-custom {
   background-color: rgba(50, 50, 50, 0.7);
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+  box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
 }
 
 /* Cards */
 .card {
-  background: rgba(40, 40, 40, 0.75);
-  backdrop-filter: blur(10px);
+  background: rgba(40, 40, 40, 0.85);
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(74, 144, 226, 0.6);
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.4);
   color: #ddd;
 }
 
-/* Buttons */
 .card .btn-primary {
   background-color: #4a90e2;
+  color: #000;
   border: none;
-  transition: background-color 0.3s ease;
-  color: #fff;
 }
 
 .card .btn-primary:hover {
@@ -88,11 +87,12 @@ footer {
   text-align: center;
 }
 
-/* Responsive Adjustments */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
-  header h1 {
+  .hero-section h1 {
     font-size: 2.5rem;
   }
+
   section h2 {
     font-size: 2rem;
   }

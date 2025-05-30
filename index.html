@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samuel Rooke – Portfolio</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navbar (Fixed & Flush) -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container-fluid">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
       <a class="navbar-brand" href="#top">Samuel Rooke</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -35,25 +33,20 @@
   </nav>
 
   <!-- Hero Section -->
-  <header id="top" class="text-center py-5">
-    <div class="container">
+  <header id="top" class="hero-section">
+    <div class="container text-center">
       <h1>Hello, I'm Samuel Rooke</h1>
-      <p class="lead">Backend Developer • Robotics Enthusiast • Business-IT Student.</p>
+      <p class="lead">Backend Developer • Robotics Enthusiast • Business-IT Student</p>
     </div>
   </header>
 
   <!-- About Me -->
-  <section id="about" class="container py-5">
+  <section id="about" class="container">
     <h2>About Me</h2>
-    <p>    I’m Samuel Rooke, a second-year Business IT student at Häme University of Applied Sciences. I’m passionate about backend development and robotics, and I enjoy applying programming skills to solve real-world problems.
+    <p>I'm Samuel Rooke, a second-year Business IT student at Häme University of Applied Sciences. I'm passionate about backend development and robotics, and I enjoy applying programming skills to solve real-world problems.</p>
+    <p>So far, I have completed a broad range of studies, including programming fundamentals, operating systems, databases, object-oriented programming, web development, and software development tools. My coursework also covers professional English and working in business environments.</p>
+    <p>I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and I have hands-on experience with tools such as Docker, Git, Linux, Jira, and Scrum. I focus on continuous learning and teamwork to build reliable and efficient software solutions.</p>
 
-
-
-So far, I have completed a broad range of studies, including programming fundamentals, operating systems, databases, object-oriented programming, web development, and software development tools. My coursework also covers professional English and working in business environments.
-
-
-
-I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and I have hands-on experience with tools such as Docker, Git, Linux, Jira, and Scrum. I focus on continuous learning and teamwork to build reliable and efficient software solutions.</p>
     <h3>Skills & Expertise</h3>
     <ul>
       <li>Backend Development (Java, Python, PHP, RESTful APIs)</li>
@@ -65,8 +58,8 @@ I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and 
     </ul>
   </section>
 
-  <!-- Languages Section -->
-  <section id="languages" class="container py-5">
+  <!-- Languages -->
+  <section id="languages" class="container">
     <h2>Languages</h2>
     <h3>Programming Languages</h3>
     <ul>
@@ -74,17 +67,20 @@ I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and 
       <li>Python</li>
       <li>PHP</li>
       <li>JavaScript</li>
-      <li>C++</li>
+      <li>SQL</li>
+      <li>HTML/CSS</li>
     </ul>
     <h3>Spoken Languages</h3>
     <ul>
       <li>English (Fluent)</li>
-      <li>Finnish (Intermediate)</li>
+      <li>Finnish (Fluent)</li>
+      <li>Swedish (Basic)</li>
+      <li>French (Basic)</li>
     </ul>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-light py-5">
+  <section id="projects" class="bg-dark-custom">
     <div class="container">
       <h2>Projects</h2>
       <div class="row">
@@ -93,7 +89,7 @@ I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and 
             <div class="card-body">
               <h5 class="card-title">Java REST API + MySQL</h5>
               <p class="card-text">A RESTful service that stores and retrieves objects using JPA and MySQL.</p>
-              <a href="https://github.com/samuelrooke/your-api-repo" class="btn btn-primary" target="_blank">GitHub Repo</a>
+              <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">GitHub Repo</a>
             </div>
           </div>
         </div>
@@ -102,7 +98,7 @@ I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and 
             <div class="card-body">
               <h5 class="card-title">LeJOS EV3 Line Follower</h5>
               <p class="card-text">PID-controlled robot using Java and LeJOS, with HTTP-based control.</p>
-              <a href="https://github.com/samuelrooke/your-robot-repo" class="btn btn-primary" target="_blank">GitHub Repo</a>
+              <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">GitHub Repo</a>
             </div>
           </div>
         </div>
@@ -111,23 +107,22 @@ I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and 
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="container py-5">
+  <section id="contact" class="container">
     <h2>Contact</h2>
-    <p>Feel free to reach out via GitHub or email.</p>
     <ul>
       <li><strong>GitHub:</strong> <a href="https://github.com/samuelrooke" target="_blank">github.com/samuelrooke</a></li>
       <li><strong>Email:</strong> srooke50@gmail.com</li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank">linkedin.com/in/samuel-rooke</a></li>
     </ul>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-3">
+  <footer>
     <p>© 2025 Samuel Rooke</p>
   </footer>
 
-  <!-- Bootstrap & Custom JS -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
