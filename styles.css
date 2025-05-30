@@ -1,155 +1,99 @@
+/* Global Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #ffffff;
-    color: #333;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  color: #e0e0e0;
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
+/* Navbar */
+.navbar {
+  background-color: rgba(40, 40, 40, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid #4a90e2; /* bright blue accent */
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(40, 40, 40, 1);
+}
+
+/* Hero Section */
 header {
-    text-align: center;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5rem 1rem;
+  background: rgba(25, 25, 25, 0.85);
 }
 
 header h1 {
-    font-size: 48px;
-    margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #4a90e2; /* bright blue accent */
 }
 
-header .date {
-    font-style: italic;
-    color: #f0e68c;
+header p.lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #bbb;
 }
 
-article {
-    text-align: center;
-    margin: 40px auto;
-    padding: 100px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Sections */
+section {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-article figure {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+section h2 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  text-align: center;
 }
 
-article figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
+/* Projects */
+.bg-light {
+  background-color: rgba(50, 50, 50, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
 }
 
-a {
-    color: #0073e6;
-    text-decoration: none;
+/* Cards */
+.card {
+  background: rgba(40, 40, 40, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.6);
+  color: #ddd;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #005bb5;
+/* Buttons */
+.card .btn-primary {
+  background-color: #4a90e2;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: #fff;
 }
 
+.card .btn-primary:hover {
+  background-color: #356ac3;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #777;
+  background-color: #181818;
+  padding: 1rem 0;
+  color: #888;
+  text-align: center;
 }
 
-footer .social-tabs {
-    margin-top: 10px;
-}
-
-/* Instagram Button */
-footer .social-tabs .instagram {
-    background-color: #E1306C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 0 10px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-footer .social-tabs .instagram:hover {
-    background-color: #d22863;
-    transform: scale(1.05);
-}
-
-/* Facebook Button */
-footer .social-tabs .facebook {
-    background-color: #4267B2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 0 10px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-footer .social-tabs .facebook:hover {
-    background-color: #365899;
-    transform: scale(1.05);
-}
-
-/* TikTok Button */
-footer .social-tabs .tiktok {
-    background-color: #010101;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 0 10px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-footer .social-tabs .tiktok:hover {
-    background-color: #222222;
-    transform: scale(1.05);
-}
-
-.collapse {
-    transition: height 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-}
-
-.collapse .bg-dark {
-    background-color: #212529;
-    color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.collapse .h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ffc107;
-}
-
-.collapse .text-body-secondary {
-    font-size: 1rem;
-    color: #adb5bd;
-}
-
-.navbar {
-    padding: 0.5rem 1rem;
-    border-bottom: 2px solid #343a40;
-}
-
-.navbar .navbar-toggler {
-    border: none;
-    padding: 0.5rem;
-    background-color: #495057;
-    border-radius: 5px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
 }
