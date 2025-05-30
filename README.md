@@ -18,4 +18,4 @@ This is my personal portfolio website created as a 1st-year student project. It 
 
 ## About Me
 
-I’m a first-year student learning web development and programming. This portfolio is a way to practice and showcase my work while keeping things simple and clear.
+I’m a first-year student learning web development and programming. This portfolio is a way to practice and showcase my work
