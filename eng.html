@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samuel Rooke – Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top">Samuel Rooke</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        <!-- Kielivalinta lipuilla -->
+        <li class="nav-item d-flex align-items-center ml-3">
+          <a href="eng.html" title="English" class="nav-link p-0">
+            <img src="https://flagcdn.com/gb.svg" alt="English" style="width:60px; height:40px;  cursor:pointer;" />
+          </a>
+          <a href="fi.html" title="Suomi" class="nav-link p-0 ml-2">
+            <img src="https://flagcdn.com/fi.svg" alt="Suomi" style="width: 56px; height:40px;  cursor:pointer;" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <section id="top" class="hero text-center mt-5 pt-5">
+    <div class="container">
+      <h1>Samuel Rooke</h1>
+      <p class="lead">First-year Business IT student interested in backend development and robotics.</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center">About Me</h2>
+    <div class="section-card text-center">
+      <p>I'm Samuel Rooke, a second-year Business IT student at Häme University of Applied Sciences. I'm passionate about backend development and robotics, and I enjoy applying programming skills to solve real-world problems.</p>
+      <p>So far, I have completed a broad range of studies, including programming fundamentals, operating systems, databases, object-oriented programming, web development, and software development tools. My coursework also covers professional English and working in business environments.</p>
+      <p>I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and I have hands-on experience with tools such as Docker, Git, Linux, Jira, and Scrum. I focus on continuous learning and teamwork to build reliable and efficient software solutions.</p>
+
+      <h3 class="mt-4">Skills & Expertise</h3>
+      <ul class="list-unstyled">
+        <li>Backend Development (Java, Python, PHP, RESTful APIs)</li>
+        <li>Database Management (MySQL, SQL)</li>
+        <li>DevOps & Cloud (Docker, Git, Linux, AWS)</li>
+        <li>Robotics & AI (LeJOS EV3, Machine Learning Basics)</li>
+        <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+        <li>Agile Workflow (Jira, Scrum, Continuous Integration)</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Languages -->
+  <section id="languages" class="container py-5">
+    <h2 class="text-center">Languages</h2>
+    <div class="section-card">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h4>Programming Languages</h4>
+          <ul class="list-unstyled">
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Spoken Languages</h4>
+          <ul class="list-unstyled">
+            <li>English (Fluent)</li>
+            <li>Finnish (Fluent)</li>
+            <li>Swedish (Basic)</li>
+            <li>French (Basic)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Projects I Have Participated In</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Java REST API + MySQL</h5>
+              <p class="card-text">A RESTful service that stores and retrieves objects using JPA and MySQL.</p>
+              <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">LeJOS EV3 Line Follower</h5>
+              <p class="card-text">PID-controlled robot using Java and LeJOS, with HTTP-based control.</p>
+              <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Website with PHP, MySQL & Docker</h5>
+              <p class="card-text">A Website built with HTML, CSS, PHP and MySQL, hosted in a Docker container for easy deployment. This project was my first project involving Web-Development</p>
+              <a href="https://github.com/jomi112233/WebsiteProject" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 text-center">
+    <h2>Contact</h2>
+    <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <a href="https://github.com/samuelrooke" target="_blank" class="btn btn-primary">github.com/samuelrooke</a>
+        </div>
+      </div>
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">Email</h5>
+          <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
+        </div>
+      </div>
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">LinkedIn</h5>
+          <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" class="btn btn-primary">linkedin.com/in/samuel-rooke</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname;
+      const langLinks = document.querySelectorAll('.dropdown-menu a');
+
+      langLinks.forEach(link => {
+        if (path.endsWith(link.getAttribute('href'))) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

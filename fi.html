@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samuel Rooke – Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top">Samuel Rooke</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        <!-- Kielivalinta lipuilla -->
+        <li class="nav-item d-flex align-items-center ml-3">
+          <a href="eng.html" title="English" class="nav-link p-0">
+            <img src="https://flagcdn.com/gb.svg" alt="English" style="width:60px; height:40px;  cursor:pointer;" />
+          </a>
+          <a href="fi.html" title="Suomi" class="nav-link p-0 ml-2">
+            <img src="https://flagcdn.com/fi.svg" alt="Suomi" style="width: 56px; height:40px;  cursor:pointer;" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <section id="top" class="hero text-center mt-5 pt-5">
+    <div class="container">
+      <h1>Samuel Rooke</h1>
+      <p class="lead"><strong>Koodaan, korjaan ja kehityn - IT-tradenomi matkalla osaajaksi.</strong></p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center">Tietoa minusta</h2>
+    <div class="section-card text-center">
+      <p>
+        Olen Tietojenkäsittelyn Tradenomi -opiskelija, joka käytännössä tarkoittaa että yhdistän teknisen osaamisen ja liiketoimintaosaamisen kehittääkseni toimivia ja tehokkaita IT-ratkaisuja.
+      </p>
+      <p>
+        Minulla on erityinen kiinnostus backend-kehitykseen ja robotiikkaan. Minulla on lähes kaksi vuotta kokemusta varastotyöstä, mikä on kehittänyt työskentelytaitojani ja vastuullisuuttani.
+      </p>
+      <p>
+        Lisäksi minulla on kokemusta Java- ja Python-ohjelmoinnista sekä REST-rajapinnoista. Nautin monimutkaisten ongelmien ratkaisemisesta ja käytännönläheisten, tehokkaiden ohjelmistojen rakentamisesta. Tavoitteeni on kasvaa osaavaksi kehittäjäksi ja työskennellä projekteissa, joissa teknologia yhdistyy todellisiin ongelmiin ratkaisuja.
+      </p>
+      <p>
+        Olen <strong>kaksikielinen</strong>, ja puhun äidinkielenä suomea sekä englantia. Pystyn kommunikoimaan myös ruotsiksi ja ranskaksi perusasioissa.
+      </p>
+
+      <h3 class="mt-4">Tekniset taidot & osaamiset</h3>
+      <ul class="list-unstyled">
+        <li>Backend-kehitys (Java, Python, PHP, RESTful API:t)</li>
+        <li>Tietokantojen hallinta (MySQL, SQL)</li>
+        <li>DevOps & pilvipalvelut (Docker, Git, Linux, )</li>
+        <li>Robotiikka (Applied application project, joka oli robottikilpailu)</li>
+        <li>Web-kehitys (HTML, CSS, JavaScript, Bootstrap)</li>
+        <li>Ketterät menetelmät (Jira, Confluence, Scrum, jatkuva integraatio)</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Languages -->
+  <section id="languages" class="container py-5">
+    <h2 class="text-center">Kielet</h2>
+    <div class="section-card">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h4>Ohjelmointikielet</h4>
+          <ul class="list-unstyled">
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Puhekielet</h4>
+          <ul class="list-unstyled">
+            <li>Englanti (äidinkieli)</li>
+            <li>Suomi (äidinkieli)</li>
+            <li>Ruotsi (perusteet)</li>
+            <li>Ranska (perusteet)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Projektit, joissa olen ollut mukana</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Java REST API + MySQL</h5>
+              <p class="card-text">REST-palvelu, joka tallentaa ja hakee olioita JPA:n ja MySQL:n avulla.</p>
+              <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">LeJOS EV3 Viivanseuraaja</h5>
+              <p class="card-text">PID-ohjattu robotti, joka käyttää Javaa ja LeJOS:ia sekä HTTP-pohjaista ohjausta.</p>
+              <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sivusto PHP:llä, MySQL:llä & Dockerilla</h5>
+              <p class="card-text">Sivusto rakennettu HTML:llä, CSS:llä, PHP:llä ja MySQL:llä, isännöity Docker-kontissa helpolla käyttöönotolla. Tämä oli ensimmäinen web-kehitysprojektini.</p>
+              <a href="https://github.com/jomi112233/WebsiteProject" class="btn btn-primary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 text-center">
+    <h2>Yhteystiedot</h2>
+    <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <a href="https://github.com/samuelrooke" target="_blank" class="btn btn-primary">github.com/samuelrooke</a>
+        </div>
+      </div>
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">Sähköposti</h5>
+          <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
+        </div>
+      </div>
+      <div class="card contact-card" style="width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">LinkedIn</h5>
+          <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" class="btn btn-primary">linkedin.com/in/samuel-rooke</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname;
+      const langLinks = document.querySelectorAll('.dropdown-menu a');
+
+      langLinks.forEach(link => {
+        if (path.endsWith(link.getAttribute('href'))) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
