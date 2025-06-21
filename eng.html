@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samuel Rooke – Portfolio</title>
+  <title>Samuel Rooke - Portfolio</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
@@ -34,7 +34,7 @@
           <a href="eng.html" title="English" class="nav-link p-0">
             <img src="https://flagcdn.com/gb.svg" alt="English" style="width:60px; height:40px;  cursor:pointer;" />
           </a>
-          <a href="fi.html" title="Suomi" class="nav-link p-0 ml-2">
+          <a href="index.html" title="Suomi" class="nav-link p-0 ml-2">
             <img src="https://flagcdn.com/fi.svg" alt="Suomi" style="width: 56px; height:40px;  cursor:pointer;" />
           </a>
         </li>
@@ -44,21 +44,59 @@
 </nav>
 
 
-  <section id="top" class="hero text-center mt-5 pt-5">
-    <div class="container">
-      <h1>Samuel Rooke</h1>
-      <p class="lead">First-year Business IT student interested in backend development and robotics.</p>
+ <section id="top" class="hero text-center mt-5 pt-5">
+  <div class="container grid-container">
+    <div class="photo">
+      <img src="images/s1.jpg" alt="Samuel Rooke" style="max-width:100%; border-radius: 8px;">
     </div>
-  </section>
+    <div class="text">
+      <h1>Samuel Rooke</h1>
+      <p class="lead"><strong>Bachelor of Business Administration (UAS), Data Processing</strong></p>
+    </div>
+  </div>
+</section>
 
-  <!-- About Me -->
+<style>
+ .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Swap photo and text */
+.photo {
+  order: 2; /* Push photo to second column */
+  grid-column: 2;
+}
+
+.text {
+  order: 1;
+  grid-column: 1;
+}
+
+/* Responsive stacking remains the same */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+    .photo img {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+  }
+  </style>
+  
   <section id="about" class="container py-5">
     <h2 class="text-center">About Me</h2>
     <div class="section-card text-center">
       <p>I'm Samuel Rooke, a second-year Business IT student at Häme University of Applied Sciences. I'm passionate about backend development and robotics, and I enjoy applying programming skills to solve real-world problems.</p>
       <p>So far, I have completed a broad range of studies, including programming fundamentals, operating systems, databases, object-oriented programming, web development, and software development tools. My coursework also covers professional English and working in business environments.</p>
       <p>I am proficient in Java, Python, PHP, JavaScript, and RESTful Web Services, and I have hands-on experience with tools such as Docker, Git, Linux, Jira, and Scrum. I focus on continuous learning and teamwork to build reliable and efficient software solutions.</p>
-
+  
       <h3 class="mt-4">Skills & Expertise</h3>
       <ul class="list-unstyled">
         <li>Backend Development (Java, Python, PHP, RESTful APIs)</li>

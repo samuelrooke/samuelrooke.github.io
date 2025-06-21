@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samuel Rooke – Portfolio</title>
+  <title>Samuel Rooke - Portfolio</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
@@ -45,12 +45,52 @@
 
 
 
-  <section id="top" class="hero text-center mt-5 pt-5">
-    <div class="container">
-      <h1>Samuel Rooke</h1>
-      <p class="lead"><strong>Koodaan, korjaan ja kehityn - IT-tradenomi matkalla osaajaksi.</strong></p>
+<section id="top" class="hero text-center mt-5 pt-5">
+  <div class="container grid-container">
+    <div class="photo">
+      <img src="images/s1.jpg" alt="Samuel Rooke" style="max-width:100%; border-radius: 8px;">
     </div>
-  </section>
+    <div class="text">
+      <h1>Samuel Rooke</h1>
+      <p class="lead"><strong>Tietojenkäsittelyn Tradenomi</strong></p>
+    </div>
+  </div>
+</section>
+
+<style>
+ .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Swap photo and text */
+.photo {
+  order: 2; /* Push photo to second column */
+  grid-column: 2;
+}
+
+.text {
+  order: 1;
+  grid-column: 1;
+}
+
+/* Responsive stacking remains the same */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .photo img {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+}
+
+</style>
 
   <!-- About Me -->
   <section id="about" class="container py-5">
