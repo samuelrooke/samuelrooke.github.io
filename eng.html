@@ -3,219 +3,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samuel Rooke - Portfolio</title>
+  <title>Samuel Rooke - Backend & Web Development</title>
+  
+  <link rel="icon" href="images/favicon.png" type="image/png" />
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <!-- Custom CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#top">Samuel Rooke</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#top">Samuel Rooke</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-        <!-- Kielivalinta lipuilla -->
-        <li class="nav-item d-flex align-items-center ml-3">
-          <a href="eng.html" title="English" class="nav-link p-0">
-            <img src="https://flagcdn.com/gb.svg" alt="English" style="width:60px; height:40px;  cursor:pointer;" />
-          </a>
-          <a href="index.html" title="Suomi" class="nav-link p-0 ml-2">
-            <img src="https://flagcdn.com/fi.svg" alt="Suomi" style="width: 56px; height:40px;  cursor:pointer;" />
-          </a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          
+          <li class="nav-item d-flex align-items-center ml-3">
+            <a href="eng.html" title="Switch to English" class="nav-link p-0" aria-label="Switch to English version">
+              <img src="https://flagcdn.com/gb.svg" alt="British flag" style="width:60px; height:40px; cursor:pointer;" />
+            </a>
+            <a href="index.html" title="Switch to Finnish" class="nav-link p-0 ml-2" aria-label="Switch to Finnish version">
+              <img src="https://flagcdn.com/fi.svg" alt="Finnish flag" style="width:56px; height:40px; cursor:pointer;" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-
- <section id="top" class="hero text-center mt-5 pt-5">
-  <div class="container grid-container">
-    <div class="photo">
-      <img src="images/s1.jpg" alt="Samuel Rooke" style="max-width:100%; border-radius: 8px;">
-    </div>
-    <div class="text">
-      <h1>Samuel Rooke</h1>
-      <p class="lead"><strong>Bachelor of Business Administration (UAS), Data Processing</strong></p>
-    </div>
-  </div>
-</section>
-
-<style>
- .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Swap photo and text */
-.photo {
-  order: 2; /* Push photo to second column */
-  grid-column: 2;
-}
-
-.text {
-  order: 1;
-  grid-column: 1;
-}
-
-/* Responsive stacking remains the same */
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-    .photo img {
-      margin: 0 auto;
-      max-width: 60%;
-    }
-  }
-  </style>
-  
-  <section id="about" class="container py-5">
-    <h2 class="text-center">About Me</h2>
-    <div class="section-card text-center">
-      <p>I'm Samuel Rooke, a second-year Business IT student at Häme University of Applied Sciences, specializing in backend development and robotics. I enjoy solving real-world problems through programming.</p>
-      <p>My studies cover programming fundamentals, operating systems, databases, OOP, web development, and software tools. I have hands-on experience with Java, Python, PHP, JavaScript, RESTful APIs, Docker, Git, Linux, Jira, and Scrum.</p>
-      <p>I focus on continuous learning and teamwork to deliver efficient, reliable software solutions.</p>
-
-      <h3 class="mt-4">Skills & Expertise</h3>
-      <ul class="list-unstyled">
-        <li>Backend Development (Java, Python, PHP, RESTful APIs)</li>
-        <li>Database Management (MySQL, SQL)</li>
-        <li>DevOps & Cloud (Docker, Git, Linux, AWS)</li>
-        <li>Robotics & AI (LeJOS EV3, Machine Learning Basics)</li>
-        <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
-        <li>Agile Workflow (Jira, Scrum, Continuous Integration)</li>
-      </ul>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- Languages -->
-  <section id="languages" class="container py-5">
-    <h2 class="text-center">Languages</h2>
-    <div class="section-card">
-      <div class="row text-center">
-        <div class="col-md-6">
-          <h4>Programming Languages</h4>
-          <ul class="list-unstyled">
-            <li>Java</li>
-            <li>Python</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h4>Spoken Languages</h4>
-          <ul class="list-unstyled">
-            <li>English (Fluent)</li>
-            <li>Finnish (Fluent)</li>
-            <li>Swedish (Basic)</li>
-            <li>French (Basic)</li>
-          </ul>
-        </div>
+  <section id="top" class="hero text-center mt-5 pt-5">
+    <div class="container grid-container">
+      <div class="photo">
+        <img src="images/s1.jpg" alt="Photo of Samuel Rooke" style="max-width:100%; border-radius: 8px;">
+      </div>
+      <div class="text">
+        <h1>Samuel Rooke</h1>
+        <p class="lead"><strong>Backend Development & Web Solutions</strong></p>
+        <a href="#contact" id="hero-contact-btn" class="btn btn-hero mt-4">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="bg-light py-5">
-    <div class="container text-center">
-      <h2>Projects I Have Participated In</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Java REST API + MySQL</h5>
-              <p class="card-text">A RESTful service that stores and retrieves objects using JPA and MySQL.</p>
-              <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">GitHub Repo</a>
+  <main>
+    <section id="about" class="container py-5">
+      <h2 class="text-center">About Me</h2>
+      <div class="section-card text-center">
+        <p>I am a software developer specializing in backend development and robotics. My passion is building efficient and reliable digital solutions that solve practical problems and deliver value to my clients.</p>
+        <p>My studies at Häme University of Applied Sciences have provided me with a strong foundation in object-oriented programming, web development, and agile methodologies, among other things. I am committed to continuous learning and teamwork to achieve high-quality results.</p>
+
+        <h3 class="mt-4">Core Technical Skills</h3>
+        <dl class="skills-list">
+            <dt>Backend Development</dt>
+            <dd>Java, Python, PHP, RESTful APIs</dd>
+            <dt>Databases</dt>
+            <dd>MySQL, SQL Queries & Design</dd>
+            <dt>DevOps & Cloud</dt>
+            <dd>Docker, Git, Linux, AWS Fundamentals</dd>
+            <dt>Web Development</dt>
+            <dd>HTML, CSS, JavaScript, Bootstrap</dd>
+            <dt>Robotics & AI</dt>
+            <dd>LeJOS EV3, Fundamentals of Machine Learning</dd>
+            <dt>Tools & Methodologies</dt>
+            <dd>Jira, Scrum, Agile Development</dd>
+        </dl>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="services" class="container py-5">
+        <h2 class="text-center">Services</h2>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Backend & API Development</h5>
+                        <p class="card-text">I build secure and scalable REST API interfaces and backend systems that power your application.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Implementation</h5>
+                        <p class="card-text">I implement responsive and fast websites, from simple "business card" sites to database-driven systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Technical Maintenance & Consulting</h5>
+                        <p class="card-text">I offer assistance with the maintenance of existing systems, Docker containerization, and the design of technical solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Projects</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Java REST API + MySQL</h5>
+                <p class="card-text"><strong>Problem:</strong> Need to store and manage data in a structured way through a modern web application. <br><strong>Solution:</strong> I developed a REST service using Java and JPA, enabling the creation, reading, updating, and deletion of data from a MySQL database.</p>
+                <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">View on GitHub</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">LeJOS EV3 Line Follower</h5>
-              <p class="card-text">PID-controlled robot using Java and LeJOS, with HTTP-based control.</p>
-              <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">GitHub Repo</a>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">LeJOS EV3 Line Follower</h5>
+                <p class="card-text"><strong>Problem:</strong> How to make an autonomous robot precisely follow a predetermined path. <br><strong>Solution:</strong> I built a PID-controlled line-following robot using Java and the LeJOS platform. The robot can be controlled remotely via HTTP requests.</p>
+                <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">View on GitHub</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Website with PHP, MySQL & Docker</h5>
-              <p class="card-text">A Website built with HTML, CSS, PHP and MySQL, hosted in a Docker container for easy deployment. This project was my first project involving Web-Development</p>
-              <a href="https://github.com/jomi112233/WebsiteProject" class="btn btn-primary" target="_blank">GitHub Repo</a>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Website with PHP, MySQL & Docker</h5>
+                  <p class="card-text"><strong>Problem:</strong> My first web project, aiming to learn the fundamentals of building a dynamic website. <br><strong>Solution:</strong> I implemented the website using HTML/CSS, PHP, and MySQL. The entire project is packaged in a Docker container for easy deployment.</p>
+                  <a href="https://github.com/jomi112233/WebsiteProject" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="container py-5 text-center">
-    <h2>Contact</h2>
-    <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
-      <div class="card contact-card" style="width: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">GitHub</h5>
-          <a href="https://github.com/samuelrooke" target="_blank" class="btn btn-primary">github.com/samuelrooke</a>
+    <section id="contact" class="container py-5 text-center">
+      <h2>Contact Me</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Ready to discuss your project? Let's turn your idea into a reality.</p>
+      <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
+        <div class="card contact-card">
+          <div class="card-body">
+            <h5 class="card-title">Email</h5>
+            <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
+          </div>
         </div>
-      </div>
-      <div class="card contact-card" style="width: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Email</h5>
-          <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
+        <div class="card contact-card">
+          <div class="card-body">
+            <h5 class="card-title">LinkedIn</h5>
+            <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" class="btn btn-primary">My Profile</a>
+          </div>
         </div>
+           <div class="card contact-card">
+             <div class="card-body">
+               <h5 class="card-title">GitHub</h5>
+               <a href="https://github.com/samuelrooke" target="_blank" class="btn btn-primary">My Profile</a>
+             </div>
+           </div>
       </div>
-      <div class="card contact-card" style="width: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">LinkedIn</h5>
-          <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" class="btn btn-primary">linkedin.com/in/samuel-rooke</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const path = window.location.pathname;
-      const langLinks = document.querySelectorAll('.dropdown-menu a');
+      
+      // Select the new hero contact button
+      const heroContactButton = document.getElementById('hero-contact-btn');
+      
+      if (heroContactButton) {
+        heroContactButton.addEventListener('click', function(event) {
+          // Prevent the default anchor link behavior
+          event.preventDefault();
+          
+          // Find the contact section
+          const contactSection = document.getElementById('contact');
+          
+          if (contactSection) {
+            // Scroll smoothly to the contact section
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
 
-      langLinks.forEach(link => {
-        if (path.endsWith(link.getAttribute('href'))) {
-          link.classList.add('active');
-        }
-      });
+      // You can keep any other scripts you have here
     });
   </script>
+
 </body>
 </html>
