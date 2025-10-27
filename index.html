@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samuel Rooke - Backend & Web Development</title>
-  
-  <!-- Favicon - Create a 32x32px favicon.png and place it in an 'images' folder -->
+  <title>Samuel Rooke - Portfolio</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.png" type="image/png" />
 
   <!-- Bootstrap CSS -->
@@ -17,6 +17,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#top">Samuel Rooke</a>
@@ -28,15 +29,14 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="#about">Tietoa</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Palvelut</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Osaaminen</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projektit</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Ota yhteyttä</a></li>
-          
           <li class="nav-item d-flex align-items-center ml-3">
             <a href="eng.html" title="Switch to English" class="nav-link p-0" aria-label="Switch to English version">
               <img src="https://flagcdn.com/gb.svg" alt="British flag" style="width:60px; height:40px; cursor:pointer;" />
             </a>
-            <a href="fi.html" title="Vaihda suomeksi" class="nav-link p-0 ml-2" aria-label="Vaihda suomenkieliseen versioon">
+            <a href="fi.html" title="Vaihda suomeksi" class="nav-link p-0 ml-2" aria-label="Switch to Finnish version">
               <img src="https://flagcdn.com/fi.svg" alt="Finnish flag" style="width:56px; height:40px; cursor:pointer;" />
             </a>
           </li>
@@ -45,167 +45,217 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <section id="top" class="hero text-center mt-5 pt-5">
     <div class="container grid-container">
       <div class="photo">
-        <!-- Ensure your photo is compressed for the web -->
-        <img src="images/s1.jpg" alt="Kuva Samuel Rookesta" style="max-width:100%; border-radius: 8px;">
+        <img src="images/s1.jpg" alt="Samuel Rooke, ohjelmistokehittäjä ja robotiikan harrastaja" style="max-width:100%; border-radius:8px;">
       </div>
       <div class="text">
         <h1>Samuel Rooke</h1>
-        <p class="lead"><strong>Backend-kehitys & Web-ratkaisut</strong></p>
-        <!-- NEW: Call to action button -->
+        <p class="lead"><strong>Backend & Web Development</strong> | Robotiikkaharrastaja, koodin intohimoinen oppija</p>
         <a href="#contact" id="hero-contact-btn" class="btn btn-hero mt-4">Ota yhteyttä</a>
       </div>
     </div>
   </section>
 
   <main>
+
+    <!-- About / Personal & Technical Skills -->
     <section id="about" class="container py-5">
       <h2 class="text-center">Tietoa minusta</h2>
       <div class="section-card text-center">
-        <p>Olen backend-kehitykseen ja robotiikkaan erikoistunut ohjelmistokehittäjä. Intohimoni on rakentaa tehokkaita ja luotettavia digitaalisia ratkaisuja, jotka ratkaisevat käytännön ongelmia ja tuottavat arvoa asiakkailleni.</p>
-        <p>Opintoni Hämeen ammattikorkeakoulussa ovat antaneet minulle vankan pohjan mm. oliopohjaisesta ohjelmoinnista, web-kehityksestä ja ketteristä menetelmistä. Panostan jatkuvaan oppimiseen ja tiimityöhön laadukkaiden tulosten saavuttamiseksi.</p>
+        <p>Olen ohjelmistotuotantoon erikoistuva Tietojenkäsittelyn tradenomiopiskelija. Panostan jatkuvaan oppimiseen ja tiimityöhön laadukkaiden tulosten saavuttamiseksi.</p>
+        <p>Opiskelen Tampereen Ammattikorkeakoulussa 2. vuotta, ja minulla on kokemusta web-kehityksestä, backend-ratkaisuista, tietokannoista ja robotiikasta.</p>
 
         <h3 class="mt-4">Tekniset ydinosaamiset</h3>
-        <dl class="skills-list">
-            <dt>Backend-kehitys</dt>
-            <dd>Java, Python, PHP, RESTful API -rajapinnat</dd>
-            <dt>Tietokannat</dt>
-            <dd>MySQL, SQL-kyselyt ja -suunnittelu</dd>
-            <dt>DevOps & Pilvi</dt>
-            <dd>Docker, Git, Linux, AWS-perusteet</dd>
-            <dt>Web-kehitys</dt>
-            <dd>HTML, CSS, JavaScript, Bootstrap</dd>
-            <dt>Robotiikka & AI</dt>
-            <dd>LeJOS EV3, koneoppimisen perusteet</dd>
-            <dt>Työkalut & Menetelmät</dt>
-            <dd>Jira, Scrum, ketterä kehitys</dd>
-        </dl>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 py-2">
+              <div class="card-body">
+                <h6 class="card-title">Backend</h6>
+                <p class="card-text">Java, Python, PHP, RESTful API</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 py-2">
+              <div class="card-body">
+                <h6 class="card-title">Web & Frontend</h6>
+                <p class="card-text">HTML, CSS, JavaScript, Node.js</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 py-2">
+              <div class="card-body">
+                <h6 class="card-title">DevOps & Pilvi</h6>
+                <p class="card-text">Docker, Git, Linux, AWS-perusteet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 py-2">
+              <div class="card-body">
+                <h6 class="card-title">Työkalut</h6>
+                <p class="card-text">Jira, Scrum, ketterä kehitys</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <hr class="divider">
 
-    <section id="services" class="container py-5">
-        <h2 class="text-center">Palvelut</h2>
-        <div class="row text-center justify-content-center">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Backend & API-kehitys</h5>
-                        <p class="card-text">Rakennan turvallisia ja skaalautuvia REST API -rajapintoja ja taustajärjestelmiä, jotka toimivat sovelluksesi moottorina.</p>
-                    </div>
-                </div>
+    <!-- Skills / Languages / Soft Skills / Hobbies -->
+    <section id="skills" class="container py-5">
+      <h2 class="text-center">Osaaminen & Harrastukset</h2>
+      <div class="row text-center justify-content-center">
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Kielitaito</strong></h5>
+              <p class="card-text">
+                <strong>Suomi:</strong> äidinkieli<br>
+                <strong>Englanti:</strong> toinen äidinkieli<br>
+                <strong>Ranska:</strong> B1/B2<br>
+                <strong>Ruotsi:</strong> B2<br>
+              </p>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Verkkosivustojen toteutus</h5>
-                        <p class="card-text">Toteutan responsiivisia ja nopeita verkkosivuja aina yksinkertaisista "käyntikorteista" tietokantapohjaisiin järjestelmiin asti.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Tekninen ylläpito & konsultointi</h5>
-                        <p class="card-text">Tarjoan apua olemassa olevien järjestelmien ylläpidossa, Docker-kontituksessa sekä teknisten ratkaisujen suunnittelussa.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Vuorovaikutus & Projektinhallinta</strong></h5>
+              <p class="card-text">
+                Tiimityöskentely, Scrum, tekninen viestintä. Tehokas työskentely sekä itsenäisesti että tiimissä.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Harrastukset</strong></h5>
+              <p class="card-text">
+                Uinti, Kuntosali. <br>
+                Retkeily, Kalastus <br>
+                Robotiikka, Web-kehitys, Raspberry Pi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="bg-light py-5">
       <div class="container text-center">
         <h2>Projektit</h2>
         <div class="row justify-content-center">
+
           <div class="col-md-6 mb-4">
-            <div class="card h-100">
+            <article class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Java REST API + MySQL</h5>
-                <p class="card-text"><strong>Ongelma:</strong> Tarve tallentaa ja hallita dataa jäsennellysti modernin web-sovelluksen kautta. <br><strong>Ratkaisu:</strong> Kehitin REST-palvelun Javalla ja JPA:lla, joka mahdollistaa tietojen luomisen, lukemisen, päivittämisen ja poistamisen MySQL-tietokannasta.</p>
-                <a href="https://github.com/samuelrooke/restful" class="btn btn-primary" target="_blank">Tutustu GitHubissa</a>
+                <p class="card-text"><strong>Ongelma:</strong> Tarve hallita dataa modernissa web-sovelluksessa.<br>
+                <strong>Ratkaisu:</strong> Kehitin REST-palvelun Javalla ja JPA:lla.</p>
+                <div class="mb-2">
+                  <span class="badge badge-primary mr-1">Java</span>
+                  <span class="badge badge-primary mr-1">REST</span>
+                  <span class="badge badge-primary">MySQL</span>
+                </div>
+                <a href="https://github.com/samuelrooke/restful" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
               </div>
-            </div>
+            </article>
           </div>
+
           <div class="col-md-6 mb-4">
-            <div class="card h-100">
+            <article class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">LeJOS EV3 Viivanseuraaja</h5>
-                <p class="card-text"><strong>Ongelma:</strong> Kuinka saada autonominen robotti seuraamaan tarkasti ennalta määrättyä reittiä. <br><strong>Ratkaisu:</strong> Rakensin PID-säätöön perustuvan viivaa seuraavan robotin käyttäen Javaa ja LeJOS-alustaa. Robottia voi ohjata etänä HTTP-pyynnöillä.</p>
-                <a href="https://github.com/jomi112233/Lego-Robot" class="btn btn-primary" target="_blank">Tutustu GitHubissa</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Verkkosivusto PHP:llä, MySQL:llä & Dockerilla</h5>
-                  <p class="card-text"><strong>Ongelma:</strong> Ensimmäinen web-projektini, jonka tavoitteena oli oppia dynaamisen verkkosivun rakentamisen perusteet. <br><strong>Ratkaisu:</strong> Toteutin sivuston käyttäen HTML/CSS, PHP:tä ja MySQL:ää. Koko projekti on paketoitu Docker-konttiin helppoa käyttöönottoa varten.</p>
-                  <a href="https://github.com/jomi112233/WebsiteProject" class="btn btn-primary" target="_blank">Tutustu GitHubissa</a>
+                <p class="card-text"><strong>Ongelma:</strong> Autonomisen robotin viivan seuraaminen.<br>
+                <strong>Ratkaisu:</strong> Rakensin PID-pohjaisen robotin Java & LeJOS.</p>
+                <div class="mb-2">
+                  <span class="badge badge-primary mr-1">Java</span>
+                  <span class="badge badge-primary">LeJOS</span>
                 </div>
-            </div>
+                <a href="https://github.com/jomi112233/Lego-Robot" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
+              </div>
+            </article>
           </div>
+
+          <div class="col-md-6 mb-4">
+            <article class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Verkkosivusto PHP, MySQL & Docker</h5>
+                <p class="card-text"><strong>Ongelma:</strong> Oppia dynaamisen web-sivun rakentaminen.<br>
+                <strong>Ratkaisu:</strong> Toteutin HTML/CSS, PHP ja MySQL. Paketoitu Docker-konttiin.</p>
+                <div class="mb-2">
+                  <span class="badge badge-primary mr-1">PHP</span>
+                  <span class="badge badge-primary mr-1">MySQL</span>
+                  <span class="badge badge-primary">Docker</span>
+                </div>
+                <a href="https://github.com/jomi112233/WebsiteProject" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
+              </div>
+            </article>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="container py-5 text-center">
       <h2>Ota yhteyttä</h2>
-      <p class="lead" style="margin-bottom: 2rem;">Valmiina keskustelemaan projektistasi? Tehdään ideastasi totta.</p>
       <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
+
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">Sähköposti</h5>
             <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
           </div>
         </div>
+
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">LinkedIn</h5>
-            <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" class="btn btn-primary">Profiiliini</a>
+            <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Profiiliini</a>
           </div>
         </div>
-         <div class="card contact-card">
-            <div class="card-body">
-              <h5 class="card-title">GitHub</h5>
-              <a href="https://github.com/samuelrooke" target="_blank" class="btn btn-primary">Profiiliini</a>
-            </div>
+
+        <div class="card contact-card">
+          <div class="card-body">
+            <h5 class="card-title">GitHub</h5>
+            <a href="https://github.com/samuelrooke" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Profiiliini</a>
           </div>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- NEW: Script for smooth scrolling -->
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      
-      // Select the new hero contact button
-      const heroContactButton = document.getElementById('hero-contact-btn');
-      
-      if (heroContactButton) {
-        heroContactButton.addEventListener('click', function(event) {
-          // Prevent the default anchor link behavior
-          event.preventDefault();
-          
-          // Find the contact section
-          const contactSection = document.getElementById('contact');
-          
-          if (contactSection) {
-            // Scroll smoothly to the contact section
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-          }
+      // Smooth scroll for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
-      }
-
-      // You can keep any other scripts you have here
+      });
     });
   </script>
 
