@@ -1,8 +1,8 @@
 # Portfolio Website
 
-This is my personal portfolio website created as a 1st-year student project. It showcases my skills, projects, and background with a clean and professional style featuring a calm blue-purple gradient theme.
+This is my personal portfolio website created as a 1st-year student project. It showcases my skills, projects, and background with a clean and professional style featuring a calm blue-purple gradient theme. This portfolio is made using AI 
 
-## Features
+# Features
 
 - Responsive design for different screen sizes  
 - Smooth blue-purple gradient background for a modern and elegant look  
