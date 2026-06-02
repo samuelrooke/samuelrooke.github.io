@@ -3,26 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samuel Rooke - Portfolio</title>
+  <title>Samuel Rooke | Full Stack Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Samuel Rooke, full stack -kehittäjä Tampereelta. Rakennan web-sovelluksia päästä päähän: React, Node, MySQL. Tutustu projekteihini ja ota yhteyttä." />
+  <meta name="author" content="Samuel Rooke" />
+  <link rel="canonical" href="https://samuelrooke.github.io/" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Samuel Rooke | Full Stack Developer" />
+  <meta property="og:description" content="Full stack -kehittäjä Tampereelta. React, Node, MySQL. Tutustu projekteihini." />
+  <meta property="og:image" content="https://samuelrooke.github.io/images/s1.jpg" />
+  <meta property="og:url" content="https://samuelrooke.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samuel Rooke | Full Stack Developer" />
+  <meta name="twitter:description" content="Full stack -kehittäjä Tampereelta. React, Node, MySQL." />
+  <meta name="twitter:image" content="https://samuelrooke.github.io/images/s1.jpg" />
 
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="icon" href="images/s1.jpg" type="image/jpeg" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#top">Samuel Rooke</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Avaa valikko">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -30,14 +46,15 @@
         <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="#about">Tietoa</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Osaaminen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Tausta</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projektit</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Ota yhteyttä</a></li>
-          <li class="nav-item d-flex align-items-center ml-3">
-            <a href="eng.html" title="Switch to English" class="nav-link p-0" aria-label="Switch to English version">
-              <img src="https://flagcdn.com/gb.svg" alt="British flag" style="width:60px; height:40px; cursor:pointer;" />
+          <li class="nav-item"><a class="nav-link" href="#contact">Yhteys</a></li>
+          <li class="nav-item d-flex align-items-center ml-lg-3">
+            <a href="eng.html" title="In English" class="nav-link p-0" aria-label="Switch to English">
+              <img src="https://flagcdn.com/gb.svg" alt="Britannian lippu" class="flag-icon" />
             </a>
-            <a href="fi.html" title="Vaihda suomeksi" class="nav-link p-0 ml-2" aria-label="Switch to Finnish version">
-              <img src="https://flagcdn.com/fi.svg" alt="Finnish flag" style="width:56px; height:40px; cursor:pointer;" />
+            <a href="index.html" title="Suomeksi" class="nav-link p-0 ml-2" aria-label="Vaihda suomeksi">
+              <img src="https://flagcdn.com/fi.svg" alt="Suomen lippu" class="flag-icon" />
             </a>
           </li>
         </ul>
@@ -45,195 +62,250 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="top" class="hero text-center mt-5 pt-5">
-    <div class="container grid-container">
-      <div class="photo">
-        <img src="images/s1.jpg" alt="Samuel Rooke, ohjelmistokehittäjä ja robotiikan harrastaja" style="max-width:100%; border-radius:8px;">
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <span class="shape s1"></span>
+    <span class="shape s2"></span>
+    <span class="shape s3"></span>
+    <span class="shape s4"></span>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Full Stack Developer</span>
+        <h1>Hei, olen <span class="gradient-text">Samuel</span>.</h1>
+        <p class="lead">Olen tietojenkäsittelyn opiskelija Tampereelta, ja keskityn full stack -web-kehitykseen. Työskentelen pääosin Reactin, Noden ja MySQL:n parissa.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-grad">Katso projektit</a>
+          <a href="#contact" class="btn btn-ghost">Ota yhteyttä</a>
+        </div>
+        <div class="hero-stack">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Docker</span>
+        </div>
       </div>
-      <div class="text">
-        <h1>Samuel Rooke</h1>
-        <p class="lead"><strong>Backend & Web Development</strong> | Robotiikkaharrastaja, koodin intohimoinen oppija</p>
-        <a href="#contact" id="hero-contact-btn" class="btn btn-hero mt-4">Ota yhteyttä</a>
+
+      <div class="photo-wrap">
+        <span class="photo-ring" aria-hidden="true"></span>
+        <img src="images/s1.jpg" alt="Samuel Rooke" />
       </div>
     </div>
-  </section>
+  </header>
 
   <main>
 
-    <!-- About / Personal & Technical Skills -->
-    <section id="about" class="container py-5">
-      <h2 class="text-center">Tietoa minusta</h2>
-      <div class="section-card text-center">
-        <p>Olen ohjelmistotuotantoon erikoistuva Tietojenkäsittelyn tradenomiopiskelija. Panostan jatkuvaan oppimiseen ja tiimityöhön laadukkaiden tulosten saavuttamiseksi.</p>
-        <p>Opiskelen Tampereen Ammattikorkeakoulussa 2. vuotta, ja minulla on kokemusta web-kehityksestä, backend-ratkaisuista, tietokannoista ja robotiikasta.</p>
+    <!-- About -->
+    <section id="about" class="reveal">
+      <h2>Tietoa <span class="accent">minusta</span></h2>
+      <div class="section-card">
+        <p>Olen toisen vuoden tietojenkäsittelyn (tradenomi) opiskelija Tampereen ammattikorkeakoulussa, ja kotonani olen koko sovelluspinossa. Pidän siitä, että saan ottaa epämääräisen idean ja rakentaa siitä toimivan kokonaisuuden: käyttöliittymästä rajapintaan ja tietokantaan.</p>
+        <p>Esimerkiksi kouluprojektina toteutettu <strong>CampusEats</strong> lähti liikkeelle kysymyksestä “missä syön tänään?” ja päätyi julkaistuksi sovellukseksi, joka kerää Tampereen kampusten lounaslistat yhteen näkymään. Juuri tällaiset projektit, joissa idea viedään toteutuksen kautta julkaisuun, ovat sitä mistä nautin eniten.</p>
+        <p>Etsin tällä hetkellä <strong>harjoittelu- tai junior full stack -paikkaa</strong>, jossa pääsen oppimaan tiimissä ja tekemään oikeita tuotantosovelluksia.</p>
+      </div>
+    </section>
 
-        <h3 class="mt-4">Tekniset ydinosaamiset</h3>
-        <div class="row text-center justify-content-center">
-          <div class="col-md-3 mb-3">
-            <div class="card h-100 py-2">
-              <div class="card-body">
-                <h6 class="card-title">Backend</h6>
-                <p class="card-text">Java, Python, PHP, RESTful API</p>
+    <!-- Skills -->
+    <section id="skills" class="reveal">
+      <h2><span class="accent">Osaaminen</span></h2>
+      <p class="section-lead">Painopisteeni on full stack -kehityksessä: viihdyn sekä frontendissä että backendissä.</p>
+      <div class="row justify-content-center">
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h6>Frontend</h6>
+              <div class="chips">
+                <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Bootstrap</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card h-100 py-2">
-              <div class="card-body">
-                <h6 class="card-title">Web & Frontend</h6>
-                <p class="card-text">HTML, CSS, JavaScript, Node.js</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h6>Backend</h6>
+              <div class="chips">
+                <span>Node.js</span><span>Java</span><span>Python</span><span>PHP</span><span>REST API</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card h-100 py-2">
-              <div class="card-body">
-                <h6 class="card-title">DevOps & Pilvi</h6>
-                <p class="card-text">Docker, Git, Linux, AWS-perusteet</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h6>Tietokannat</h6>
+              <div class="chips">
+                <span>MySQL</span><span>SQL-suunnittelu</span><span>JPA</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card h-100 py-2">
-              <div class="card-body">
-                <h6 class="card-title">Työkalut</h6>
-                <p class="card-text">Jira, Scrum, ketterä kehitys</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h6>DevOps &amp; työkalut</h6>
+              <div class="chips">
+                <span>Docker</span><span>Git</span><span>Linux</span><span>Render</span><span>Jira</span><span>Scrum</span>
               </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Languages -->
+      <h3 class="text-center mt-5 mb-4" style="font-weight:600;">Kielitaito</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-card">
+            <div class="lang-row">
+              <div class="lang-top"><span>Suomi</span><span class="lang-level">Äidinkieli</span></div>
+              <div class="lang-bar"><div class="fill" style="--pct:100%"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-top"><span>Englanti</span><span class="lang-level">Äidinkielen tasoinen</span></div>
+              <div class="lang-bar"><div class="fill" style="--pct:97%"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-top"><span>Ruotsi</span><span class="lang-level">B2</span></div>
+              <div class="lang-bar"><div class="fill" style="--pct:65%"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-top"><span>Ranska</span><span class="lang-level">B1 / B2</span></div>
+              <div class="lang-bar"><div class="fill" style="--pct:55%"></div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="divider">
-
-    <!-- Skills / Languages / Soft Skills / Hobbies -->
-    <section id="skills" class="container py-5">
-      <h2 class="text-center">Osaaminen & Harrastukset</h2>
-      <div class="row text-center justify-content-center">
-
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Kielitaito</strong></h5>
-              <p class="card-text">
-                <strong>Suomi:</strong> äidinkieli<br>
-                <strong>Englanti:</strong> toinen äidinkieli<br>
-                <strong>Ranska:</strong> B1/B2<br>
-                <strong>Ruotsi:</strong> B2<br>
-              </p>
-            </div>
-          </div>
+    <!-- Experience & Education -->
+    <section id="experience" class="reveal">
+      <h2>Tausta &amp; <span class="accent">koulutus</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="t-date">2024 alkaen</div>
+          <h5>Tietojenkäsittelyn tradenomi (opiskelija)</h5>
+          <div class="t-org">Tampereen ammattikorkeakoulu (TAMK)</div>
+          <p>Painopiste ohjelmistokehityksessä ja full stack -web-kehityksessä. Keskeisiä opintoja: web-kehitys, tietokannat, oliopohjainen ohjelmointi, DevOps ja ketterä kehitys.</p>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Vuorovaikutus & Projektinhallinta</strong></h5>
-              <p class="card-text">
-                Tiimityöskentely, Scrum, tekninen viestintä. Tehokas työskentely sekä itsenäisesti että tiimissä.
-              </p>
-            </div>
-          </div>
+        <div class="timeline-item">
+          <div class="t-date">2025</div>
+          <h5>Kurssi- ja omat projektit</h5>
+          <div class="t-org">TAMK ja vapaa-aika</div>
+          <p>Suunnittelin, toteutin ja julkaisin useita sovelluksia. Esimerkiksi CampusEats (kouluprojekti: React, Node ja MySQL, julkaistu Renderissä) ja RuuviTag-saunadashboard (Python, Plotly ja React).</p>
         </div>
+      </div>
 
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Harrastukset</strong></h5>
-              <p class="card-text">
-                Uinti, Kuntosali. <br>
-                Retkeily, Kalastus <br>
-                Robotiikka, Web-kehitys, Raspberry Pi.
-              </p>
-            </div>
-          </div>
-        </div>
-
+      <div class="open-callout">
+        <h3><span class="dot"></span>Avoinna uusille mahdollisuuksille</h3>
+        <p>Etsin harjoittelu- tai junior full stack -paikkaa. Jos tiimiisi mahtuu innokas kehittäjä, jutellaan!</p>
+        <a href="#contact" class="btn btn-grad">Ota yhteyttä</a>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-light py-5">
-      <div class="container text-center">
-        <h2>Projektit</h2>
-        <div class="row justify-content-center">
+    <section id="projects" class="reveal">
+      <h2><span class="accent">Projektit</span></h2>
+      <p class="section-lead">Pieni otos siitä, mitä olen rakentanut. Lisää löytyy GitHubistani.</p>
+      <div class="row justify-content-center">
 
-          <div class="col-md-6 mb-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Java REST API + MySQL</h5>
-                <p class="card-text"><strong>Ongelma:</strong> Tarve hallita dataa modernissa web-sovelluksessa.<br>
-                <strong>Ratkaisu:</strong> Kehitin REST-palvelun Javalla ja JPA:lla.</p>
-                <div class="mb-2">
-                  <span class="badge badge-primary mr-1">Java</span>
-                  <span class="badge badge-primary mr-1">REST</span>
-                  <span class="badge badge-primary">MySQL</span>
-                </div>
-                <a href="https://github.com/samuelrooke/restful" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
+        <div class="col-md-6 mb-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">CampusEats</h5>
+              <p class="card-text">Kouluprojektina toteutettu full stack -sovellus, joka kerää Tampereen kampusten päivittäiset lounaslistat yhteen näkymään. React-frontend, Node-backend ja MySQL-tietokanta, datankeruu Puppeteerilla. Julkaistu Renderissä.</p>
+              <div class="badges">
+                <span>React</span><span>Node.js</span><span>MySQL</span><span>Puppeteer</span>
               </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">LeJOS EV3 Viivanseuraaja</h5>
-                <p class="card-text"><strong>Ongelma:</strong> Autonomisen robotin viivan seuraaminen.<br>
-                <strong>Ratkaisu:</strong> Rakensin PID-pohjaisen robotin Java & LeJOS.</p>
-                <div class="mb-2">
-                  <span class="badge badge-primary mr-1">Java</span>
-                  <span class="badge badge-primary">LeJOS</span>
-                </div>
-                <a href="https://github.com/jomi112233/Lego-Robot" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
+              <div class="project-links">
+                <a href="https://campuseats-a2ww.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Live-demo</a>
+                <a href="https://github.com/samuelrooke/CampusEats" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Koodi</a>
               </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Verkkosivusto PHP, MySQL & Docker</h5>
-                <p class="card-text"><strong>Ongelma:</strong> Oppia dynaamisen web-sivun rakentaminen.<br>
-                <strong>Ratkaisu:</strong> Toteutin HTML/CSS, PHP ja MySQL. Paketoitu Docker-konttiin.</p>
-                <div class="mb-2">
-                  <span class="badge badge-primary mr-1">PHP</span>
-                  <span class="badge badge-primary mr-1">MySQL</span>
-                  <span class="badge badge-primary">Docker</span>
-                </div>
-                <a href="https://github.com/jomi112233/WebsiteProject" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tutustu GitHubissa</a>
-              </div>
-            </article>
-          </div>
-
+            </div>
+          </article>
         </div>
+
+        <div class="col-md-6 mb-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">RuuviTag-saunadashboard</h5>
+              <p class="card-text">RuuviTag-antureiden lämpötila- ja kosteusdatan analysointi ja visualisointi. Python ja Plotly datan käsittelyyn sekä interaktiivinen React-dashboard trendien tarkasteluun.</p>
+              <div class="badges">
+                <span>Python</span><span>Plotly</span><span>React</span><span>IoT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://samuelrooke.github.io/RuuviTag-projekti/" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Live-demo</a>
+                <a href="https://github.com/samuelrooke/RuuviTag-projekti" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Koodi</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Hollow Line</h5>
+              <p class="card-text">Komentorivin tekstiseikkailu hylätyssä metrossa: JSON-pohjainen maailma, tekoälyvastustaja, pelkomekaniikka ja useita loppuratkaisuja. Toteutettu Pythonilla.</p>
+              <div class="badges">
+                <span>Python</span><span>JSON</span><span>Tekstiseikkailu</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/samuelrooke/Python-game-Hollow-Line" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Koodi</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <article class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Lisää GitHubissa</h5>
+              <p class="card-text">Java REST -rajapinnat, React-sovellukset, DevOps-harjoitukset ja muut opintojen aikana toteuttamani projektit löytyvät GitHub-profiilistani.</p>
+              <div class="badges">
+                <span>Java</span><span>JavaScript</span><span>Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/samuelrooke?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Kaikki projektit</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container py-5 text-center">
-      <h2>Ota yhteyttä</h2>
-      <div class="contact-container d-flex flex-wrap justify-content-center gap-4 mt-4">
+    <section id="contact" class="reveal">
+      <h2>Ota <span class="accent">yhteyttä</span></h2>
+      <p class="section-lead">Onko mielessä projekti, harjoittelupaikka tai vain hyvä kysymys? Vastaan mielelläni.</p>
+      <div class="contact-container">
 
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">Sähköposti</h5>
-            <a href="mailto:srooke50@gmail.com" class="btn btn-primary">srooke50@gmail.com</a>
+            <a href="mailto:srooke50@gmail.com" class="btn btn-grad">srooke50@gmail.com</a>
           </div>
         </div>
 
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">LinkedIn</h5>
-            <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Profiiliini</a>
+            <a href="https://www.linkedin.com/in/samuel-rooke-949398345/" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Profiiliini</a>
           </div>
         </div>
 
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
-            <a href="https://github.com/samuelrooke" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Profiiliini</a>
+            <a href="https://github.com/samuelrooke" target="_blank" rel="noopener noreferrer" class="btn btn-grad">Profiiliini</a>
           </div>
         </div>
 
@@ -242,22 +314,15 @@
 
   </main>
 
+  <footer class="site-footer">
+    © <span id="year">2026</span> Samuel Rooke · Rakennettu HTML:llä, CSS:llä ja JavaScriptillä.
+  </footer>
+
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Smooth scroll for all anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
