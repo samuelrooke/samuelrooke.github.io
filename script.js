@@ -1,66 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ===============================
-  // Sticky Navbar & Scroll Progress
+  // Sticky Navbar
   // ===============================
   const navbar = document.querySelector(".navbar");
-  const progressBar = document.querySelector(".progress-bar");
 
-  const updateScrollProgress = () => {
+  const onScroll = () => {
     if (navbar) {
       navbar.classList.toggle("scrolled", window.scrollY > 50);
     }
-    if (progressBar) {
-      const scrollProgress = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-      progressBar.style.width = scrollProgress + "%";
-    }
   };
 
-  window.addEventListener("scroll", updateScrollProgress);
-  updateScrollProgress(); // Alusta heti
+  window.addEventListener("scroll", onScroll);
+  onScroll();
 
   // ===============================
-  // Theme Toggle (Light/Dark Mode)
+  // Scroll reveal (fade-in) + language bars
   // ===============================
-  const themeToggle = document.querySelector(".theme-toggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      const isLight = document.body.classList.toggle("light-mode");
-      // ARIA label toggle
-      themeToggle.setAttribute("aria-pressed", isLight);
-    });
-  }
-
-  // ===============================
-  // Smooth Fade-In for Sections
-  // ===============================
-  const observer = new IntersectionObserver(
+  const revealObserver = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          obs.unobserve(entry.target); // Fade-in vain kerran
+          obs.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
   );
 
-  document.querySelectorAll("section").forEach(section => {
-    observer.observe(section);
-  });
+  document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
   // ===============================
-  // Navbar Auto-Collapse on Mobile
+  // Active nav link on scroll
   // ===============================
-  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll(".navbar .nav-link[href^='#']");
+
+  const spyObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+          });
+        }
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px" }
+  );
+  sections.forEach(section => spyObserver.observe(section));
+
+  // ===============================
+  // Auto-collapse navbar on mobile
+  // ===============================
   const navbarCollapse = document.querySelector(".navbar-collapse");
-
   if (navbarCollapse && navLinks.length > 0) {
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         if (navbarCollapse.classList.contains("show")) {
           navbarCollapse.classList.remove("show");
-          // ARIA: päivitä expanded-status
           const toggleBtn = document.querySelector(".navbar-toggler");
           if (toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
         }
@@ -69,15 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===============================
-  // Smooth Hero Button Scroll
+  // Footer year
   // ===============================
-  const heroContactButton = document.getElementById("hero-contact-btn");
-  const contactSection = document.getElementById("contact");
-
-  if (heroContactButton && contactSection) {
-    heroContactButton.addEventListener("click", e => {
-      e.preventDefault();
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
