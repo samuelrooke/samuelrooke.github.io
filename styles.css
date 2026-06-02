@@ -90,10 +90,13 @@ h2 {
 h2 .accent { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
 .gradient-text {
+  display: inline-block;
+  white-space: nowrap;
   background: linear-gradient(135deg, #ffffff 0%, #c2c5cd 25%, #7c7f89 50%, #e9ebf0 75%, #ffffff 100%);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   animation: gradientMove 8s ease infinite;
 }
