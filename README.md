@@ -1,21 +1,29 @@
-# Portfolio Website
+# Samuel Rooke | Portfolio
 
-This is my personal portfolio website created as a 1st-year student project. It showcases my skills, projects, and background with a clean and professional style featuring a calm blue-purple gradient theme. This portfolio is made using AI 
+My personal portfolio website. I'm a second-year Business Information Systems student at Tampere University of Applied Sciences (TAMK), focused on full stack web development: building apps end to end from the React frontend to the database and deployment.
 
-# Features
+Live site: **https://samuelrooke.github.io/**
 
-- Responsive design for different screen sizes  
-- Smooth blue-purple gradient background for a modern and elegant look  
-- Simple, readable typography using the Poppins font  
-- Sections including About Me, Projects, and Contact  
-- Clean layout with card-style project highlights  
+## Features
 
-## Technologies Used
+- Bilingual: Finnish (`index.html`) and English (`eng.html`) with a flag-based language switcher
+- Black and silver design with subtle animation: metallic gradient text, spinning shapes, drifting background glow
+- Responsive layout for all screen sizes
+- Sections: About, Skills, Background & Education (timeline plus an "open to work" callout), Projects, Contact
+- Animated language-proficiency bars and scroll-reveal effects
+- Scroll progress bar and active-section navigation highlighting
+- SEO and Open Graph / Twitter Card meta tags for link sharing
 
-- HTML5 & CSS  
-- Google Fonts (Poppins)  
-- Responsive design principles  
+## Featured Projects
 
-## About Me
+- **CampusEats** (school project): Full stack app for browsing daily Tampere university lunch menus. React, Node, MySQL, and Puppeteer, deployed on Render.
+- **RuuviTag Sauna Dashboard**: IoT sensor data analysis and visualization with Python, Plotly, and React.
+- **Hollow Line**: Command-line text adventure in Python with a JSON-driven world, an AI antagonist, and multiple endings.
 
-I’m a first-year student learning web development and programming. This portfolio is a way to practice and showcase my work
+## Built with
+
+- HTML5 and CSS3
+- Bootstrap 4 (layout grid)
+- JavaScript (vanilla)
+- Google Fonts (Poppins)
+- GitHub Pages
