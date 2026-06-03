@@ -4,13 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===============================
   const navbar = document.querySelector(".navbar");
 
+  let ticking = false;
   const onScroll = () => {
-    if (navbar) {
-      navbar.classList.toggle("scrolled", window.scrollY > 50);
-    }
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      if (navbar) navbar.classList.toggle("scrolled", window.scrollY > 50);
+      ticking = false;
+    });
   };
 
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   // ===============================
