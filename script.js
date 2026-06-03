@@ -68,6 +68,37 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===============================
+  // Project image carousels
+  // ===============================
+  document.querySelectorAll("[data-carousel]").forEach(carousel => {
+    const track = carousel.querySelector(".carousel-track");
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    const dots = Array.from(carousel.querySelectorAll(".dot"));
+    const prev = carousel.querySelector(".carousel-arrow.prev");
+    const next = carousel.querySelector(".carousel-arrow.next");
+    if (!track || slides.length === 0) return;
+
+    let index = 0;
+    const goTo = i => {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = "translateX(-" + index * 100 + "%)";
+      dots.forEach((dot, n) => dot.classList.toggle("active", n === index));
+    };
+
+    dots.forEach((dot, n) => dot.addEventListener("click", () => goTo(n)));
+    if (prev) prev.addEventListener("click", () => goTo(index - 1));
+    if (next) next.addEventListener("click", () => goTo(index + 1));
+
+    carousel.setAttribute("tabindex", "0");
+    carousel.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") { e.preventDefault(); goTo(index - 1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); goTo(index + 1); }
+    });
+
+    goTo(0);
+  });
+
+  // ===============================
   // Footer year
   // ===============================
   const yearEl = document.getElementById("year");
